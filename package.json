@@ -1,0 +1,58 @@
+{
+  "name": "hamart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@next/env": "^13.1.6",
+    "@popperjs/core": "^2.11.6",
+    "@react-three/drei": "^10.3.0",
+    "@react-three/fiber": "^9.1.2",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@stripe/react-stripe-js": "^1.16.4",
+    "@stripe/stripe-js": "^1.46.0",
+    "bootstrap": "^5.2.3",
+    "dayjs": "^1.11.7",
+    "eslint": "8.28.0",
+    "gsap": "^3.13.0",
+    "next": "^15.0.4",
+    "razorpay": "^2.9.6",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.6",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.42.1",
+    "react-icons": "^5.5.0",
+    "react-modal": "^3.16.3",
+    "react-modal-video": "^2.0.0",
+    "react-paginate": "^8.1.4",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.8",
+    "react-super-responsive-table": "^6.0.0",
+    "react-timer-hook": "^3.0.5",
+    "react-to-print": "^3.0.2",
+    "react-toastify": "^10.0.6",
+    "react-tooltip": "^5.3.1",
+    "react-use": "^17.4.0",
+    "sass": "^1.56.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.4.5",
+    "three": "^0.177.0",
+    "three-stdlib": "^2.36.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^15.0.4"
+  }
+}
