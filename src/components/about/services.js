@@ -5,12 +5,12 @@ import { Dashboard, Mobile, Website } from "@svg/index";
  const service_data = [
   {
     icon: <Website />,
-    project: '3',
+    project: '8',
     title: "Listed Products",
   },
   {
     icon: <Mobile />,
-    project: '5',
+    project: '10',
     title: "Lovely Customer",
   },
   {

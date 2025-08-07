@@ -29,16 +29,16 @@ const ShopFeature = () => {
               title="Free Shipping"
               subtitle={
                 <>
-                  Free Shipping for orders <br /> over $120
+                  Free Shipping for orders <br /> over ₹500
                 </>
               }
             />
             <SingleFeature
               icon={<Refund/>}
-              title="Refund"
+              title="discount"
               subtitle={
                 <>
-                  Within 30 days for an <br /> exchange.
+                  get discount on buying <br /> 3 products
                 </>
               }
             />
@@ -56,7 +56,7 @@ const ShopFeature = () => {
               title="Payment"
               subtitle={
                 <>
-                  Pay with Multiple Credit <br /> Cards
+                  Pay with Multiple Credit <br /> Cards and upi
                 </>
               }
             />

@@ -112,13 +112,10 @@ const SquareImages = forwardRef((props, ref) => {
         onMouseEnter={() => handleMouseEnter("img1")}
         onMouseLeave={handleMouseLeave}
       >
-        <Link href = "/hotwater">
+        <Link href = "/shop?category=pink-himalayan-salt">
         <Image src={img1} alt="Hot Water Rebate" layout="fill" objectFit="cover" />
         <div className="overlay">
-          <div className="text">
-            <h2>Pink Himalayan Salt</h2>
-            <p>With The Goodness of Pink Salt</p>
-          </div>
+       
         </div>
         </Link>
       </div>
@@ -129,13 +126,10 @@ const SquareImages = forwardRef((props, ref) => {
         onMouseEnter={() => handleMouseEnter("img2")}
         onMouseLeave={handleMouseLeave}
       >
-        <Link href = "/ac">
+        <Link href = "/shop?category=pudina">
         <Image src={img2} alt="Aircon Rebate" layout="fill" objectFit="cover" />
         <div className="overlay">
-          <div className="text">
-            <h2>Pudina Twist</h2>
-            <p>Tangy Pudian Flavour</p>
-          </div>
+        
         </div>
         </Link>
       </div>
@@ -146,13 +140,10 @@ const SquareImages = forwardRef((props, ref) => {
         onMouseEnter={() => handleMouseEnter("img3")}
         onMouseLeave={handleMouseLeave}
       >
-        <Link href = "/solar-panel">
+        <Link href = "/shop?category=peri-peri">
         <Image src={img3} alt="Contact Us" layout="fill" objectFit="cover" />
         <div className="overlay">
-          <div className="text">
-            <h2>Peri Peri</h2>
-            <p>Tasty Peri Peri masala Flavour</p>
-          </div>
+   
         </div>
         </Link>
       </div>
@@ -175,7 +166,7 @@ const SquareImages = forwardRef((props, ref) => {
           justify-content: center;
           align-items: center;
           transition: transform 0.5s ease, box-shadow 0.5s ease;
-          filter: grayscale(80%);
+
         }
 
         .image-wrapper:hover,
@@ -188,7 +179,7 @@ const SquareImages = forwardRef((props, ref) => {
         .overlay {
           position: absolute;
           inset: 0;
-          background-color: rgba(0, 0, 0, 0.5);
+        
           opacity: 0;
           transition: opacity 0.3s ease;
           display: flex;

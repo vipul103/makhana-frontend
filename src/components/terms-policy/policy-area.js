@@ -9,9 +9,9 @@ const PolicyArea = () => {
               <div className="policy__item mb-35">
                 <h4 className="policy__meta">Effective date: May 25, 2023</h4>
                 <p>
-                  Harry knows that you care about how your personal information
-                  is used and shared, and Harry takes your privacy seriously.
-                  Please read the following to learn more about Harry Privacy
+                  Kravelab knows that you care about how your personal information
+                  is used and shared, and Kravelab takes your privacy seriously.
+                  Please read the following to learn more about Kravelab Privacy
                   Policy (“Privacy Policy”). This Privacy Policy also tells you
                   about your rights and choices with respect to your Personal
                   Information, and how you can reach us to update your contact
@@ -22,11 +22,11 @@ const PolicyArea = () => {
                   By using or accessing the Services in any manner, you
                   acknowledge that you accept the practices and policies
                   outlined in this Privacy Policy, and you hereby consent that
-                  Harry will collect, use, and share your information in the
+                  Kravelab will collect, use, and share your information in the
                   following ways. Remember that your use of Services is at all
                   times subject to the Terms as set forth at
-                  https://harry.com/legal/terms, which incorporate this Privacy
-                  Policy. Any terms Harry uses in this Privacy Policy without
+                  https://Kravelab.com/legal/terms, which incorporate this Privacy
+                  Policy. Any terms Kravelab uses in this Privacy Policy without
                   defining them have the definitions given to them in the Terms.
                 </p>
               </div>
@@ -76,7 +76,7 @@ const PolicyArea = () => {
                   <li>
                     Email:{" "}
                     <span>
-                      <a href="mailto:harry.com">support@harry.com</a>
+                      <a href="kravelabco@gmail.com">kravelabco@gmail.com</a>
                     </span>
                   </li>
                 </ul>
@@ -88,7 +88,7 @@ const PolicyArea = () => {
                       href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723"
                       target="_blank"
                     >
-                      harry PTY LTD <br /> 4270, Brisbane, Australia
+                      kravelab PTY LTD <br /> 302017, malviya nager, jaipur
                     </a>
                   </p>
                 </div>

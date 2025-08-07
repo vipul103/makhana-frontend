@@ -249,7 +249,7 @@ const OrderDetails = ({
             </div>
 
             <div className="form-group mb-3">
-              <label htmlFor="country">Country</label>
+              <label htmlFor="country">State</label>
               <input
                 type="text"
                 id="country"

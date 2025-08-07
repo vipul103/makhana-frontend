@@ -25,11 +25,11 @@ const TermsArea = () => {
                   By using or accessing the Services in any manner, you
                   acknowledge that you accept the practices and policies
                   outlined in this Privacy Policy, and you hereby consent that
-                  Harry will collect, use, and share your information in the
+                  Kravelab will collect, use, and share your information in the
                   following ways. Remember that your use of Services is at all
                   times subject to the Terms as set forth at
-                  https://harry.com/legal/terms, which incorporate this Privacy
-                  Policy. Any terms Harry uses in this Privacy Policy without
+                  https://Kravelab.com/legal/terms, which incorporate this Privacy
+                  Policy. Any terms Kravelab uses in this Privacy Policy without
                   defining them have the definitions given to them in the Terms.
                 </p>
               </div>
@@ -63,7 +63,7 @@ const TermsArea = () => {
                   <li>
                     <strong>Company</strong> (referred to as either &quot;the
                     Company&quot;, &quot;We&quot;, &quot;Us&quot; or
-                    &quot;Our&quot; in this Agreement) refers to Harry.
+                    &quot;Our&quot; in this Agreement) refers to Kravelab.
                   </li>
                   <li>
                     <strong>Device</strong> means any device that can access the
@@ -73,13 +73,13 @@ const TermsArea = () => {
                     <strong>Service</strong> refers to the Website.
                   </li>
                   <li>
-                    <strong>Website</strong> refers to Harry, accessible from{" "}
+                    <strong>Website</strong> refers to Kravelab, accessible from{" "}
                     <Link
                       href="/"
                       rel="external nofollow noopener"
                       target="_blank"
                     >
-                      harry.com
+                      Kravelab.com
                     </Link>
                   </li>
                 </ul>
@@ -92,7 +92,7 @@ const TermsArea = () => {
                   <li>
                     Email:{" "}
                     <span>
-                      <a href="mailto:harry.com">support@harry.com</a>
+                      <a href="kravelabco@gmail.com">kravelabco@gmail.com</a>
                     </span>
                   </li>
                 </ul>
@@ -104,7 +104,7 @@ const TermsArea = () => {
                       href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723"
                       target="_blank"
                     >
-                      harry PTY LTD <br /> 4270, Brisbane, Australia
+                      Kravelab PTY LTD <br /> 302017, malviya nager, jaipur
                     </a>
                   </p>
                 </div>

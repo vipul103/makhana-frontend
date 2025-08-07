@@ -62,7 +62,7 @@ const SingleListProduct = ({ product }) => {
                 <span className="product__list-ammount">₹{price}</span>
               </div>
               <p>
-                Shop Harry.com for every day low prices. Free shipping on orders
+                Shop Kravelab.com for every day low prices. Free shipping on orders
                 ₹500+ or Pickup In-store and get
               </p>
 

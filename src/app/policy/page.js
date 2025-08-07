@@ -16,9 +16,9 @@ export default function Policy() {
         title="Privacy Policy"
         subtitle={
           <>
-            Your privacy is important to us. It is Harry’s policy to respect
+            Your privacy is important to us. It isKravelab’s policy to respect
             your privacy regarding <br /> any information we may collect from
-            you across our website, https:// Harry.com, <br /> and other sites
+            you across our website, https:// Kravelab.com, <br /> and other sites
             we own and operate.
           </>
         }

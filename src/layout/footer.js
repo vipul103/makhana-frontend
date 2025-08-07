@@ -18,7 +18,7 @@ function SingleWidget({ col, col_2, col_3, title, contents }) {
           <ul>
             {contents.map((l, i) => (
               <li key={i}>
-                <Link href={`/${l.url}`}>{l.title}</Link>
+                <Link href={l.link}>{l.title}</Link>
               </li>
             ))}
           </ul>
@@ -67,9 +67,9 @@ const Footer = () => {
                   col_3="2"
                   title="Company"
                   contents={[
-                    { url: "#", title: "About us" },
-                    { url: "#", title: "Privacy & Policy" },
-                    { url: "#", title: "Terms & Condition" },
+                    { link: "/about", title: "About us" },
+                    { link: "/policy", title: "Privacy & Policy" },
+                    { link: "/terms", title: "Terms & Condition" },
               
                   ]}
                 />
@@ -79,10 +79,10 @@ const Footer = () => {
                   col_3="3"
                   title="Shop"
                   contents={[
-                    { url: "#", title: "Makhana" },
-                    { url: "#", title: "Amla Candy" },
-                    { url: "#", title: "Roasted Peanut" },
-                    { url: "#", title: "Party Pack" },
+                    { link: "/shop?Category=makhana", title: "Makhana" },
+                    { link: "/shop?Category=amla-candy", title: "Amla Candy" },
+                    { link: "/shop?Category=roasted-peanuts", title: "Roasted Peanut" },
+                    { link: "/shop?Category=combo", title: "Party Pack" },
                   ]}
                 />
                 <SingleWidget
@@ -91,8 +91,8 @@ const Footer = () => {
                   col_3="4"
                   title="Support"
                   contents={[
-                    { url: "", title: "FAQs" },
-                    { url: "", title: "Contact Us" },
+                    { link: "/faq", title: "FAQs" },
+                    { link: "/contact", title: "Contact Us" },
                   ]}
                 />
 
@@ -105,12 +105,12 @@ const Footer = () => {
                       <div className="footer__contact">
                         <div className="footer__contact-call">
                           <span>
-                            <a href="tel:624-423-26-72">+91 9680359565</a>
+                            <a href="tel:+91 9680359565">+91 9680359565</a>
                           </span>
                         </div>
                         <div className="footer__contact-mail">
                           <span>
-                            <a href="mailto:support@harry.com">
+                            <a href="mailto:kravelabco@gmail.com">
                               kravelabco@gmail.com
                             </a>
                           </span>

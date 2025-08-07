@@ -1,6 +1,12 @@
 import React from "react";
 
 const social_links = [
+   {
+    link: "https://www.instagram.com/Kravelab.in",
+    target: "_blank",
+    icon: "fa-brands fa-instagram",
+    name: "Instagram",
+  },
   {
     link: "http://facebook.com",
     target: "_blank",
@@ -13,19 +19,8 @@ const social_links = [
     icon: "fa-brands fa-twitter",
     name: "Twitter",
   },
-  {
-    link: "https://www.linkedin.com/",
-    target: "_blank",
-    icon: "fa-brands fa-linkedin-in",
-    name: "Linkedin",
-  },
-  {
-    link: "https://www.youtube.com/",
-    target: "_blank",
-    icon: "fa-brands fa-youtube",
-    name: "Youtube",
-  },
 ];
+
 
 const SocialLinks = () => {
   return (

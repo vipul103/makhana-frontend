@@ -58,7 +58,7 @@ const CheckoutArea = ({
         <form onSubmit={handleSubmit(submitHandler)}>
           <div className="row">
             {/* Left: Billing Details */}
-            <div className="col-lg-6">
+            {/* <div className="col-lg-6">
               <div className="checkbox-form">
                 <h3>Billing Details</h3>
                 <BillingDetails
@@ -66,7 +66,7 @@ const CheckoutArea = ({
                   errors={errors}
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* Right: Order Summary and Payment */}
             <div className="col-lg-6">

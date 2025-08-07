@@ -5,13 +5,13 @@ const ProductCategories = () => {
     <div className="product__details-categories product__details-more">
       <p>Categories:</p>
       <span>
-        <a href="#">iPhone Cases,</a>
+        <a href="#">Healthy,</a>
       </span>
       <span>
-        <a href="#">Android Cases,</a>
+        <a href="#">most popular,</a>
       </span>
       <span>
-        <a href="#">Accessories</a>
+        <a href="#">snacks</a>
       </span>
     </div>
   );

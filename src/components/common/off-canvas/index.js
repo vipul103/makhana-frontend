@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-1.png";
-import logo from "@assets/img/logo/logo-black.svg";
+import logo from "@assets/img/logo/mainlogo.png";
 import MobileMenus from "./mobile-menus";
 import SocialLinks from "@components/social";
 
@@ -53,10 +53,10 @@ const OffCanvas = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
             <div className="offcanvas__contact">
               <p className="offcanvas__contact-call">
-                <a href="tel:+964-742-44-763">+964 742 44 763</a>
+                <a href="tel:+91 9680359565">+91 9680359565</a>
               </p>
               <p className="offcanvas__contact-mail">
-                <a href="mailto:info@harry.com">info@harry.com</a>
+                <a href="mailto:kravelabco@gmail.com">kravelabco@gmail.com</a>
               </p>
             </div>
           </div>

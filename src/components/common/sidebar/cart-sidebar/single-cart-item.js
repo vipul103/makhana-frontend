@@ -28,11 +28,11 @@ const SingleCartItem = ({ item }) => {
         </h5>
         <div className="cartmini__price-wrapper">
           {!discount && (
-            <span className="cartmini__price">${originalPrice}</span>
+            <span className="cartmini__price">₹{originalPrice}</span>
           )}
           {discount > 0 && (
             <span className="cartmini__price">
-              $
+              
               {(originalPrice - (originalPrice * discount) / 100) *
                 orderQuantity}
             </span>
