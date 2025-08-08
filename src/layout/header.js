@@ -3,15 +3,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+
 // internal
 import Menus from "./menus";
-import logo from "@assets/img/logo/mainlogo.png";
+import logo from "@assets/img/logo/krave.png";
 import { Cart, Heart, Search, User } from "@svg/index";
 import useSticky from "@hooks/use-sticky";
 import CartSidebar from "@components/common/sidebar/cart-sidebar";
 import OffCanvas from "@components/common/off-canvas";
 import useCartInfo from "@hooks/use-cart-info";
 import SearchForm from "@components/forms/search-form";
+
+// lucide-react icons
+// import { Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const Header = ({ style_2 = false }) => {
   const { sticky } = useSticky();
@@ -20,8 +24,11 @@ const Header = ({ style_2 = false }) => {
   const { quantity } = useCartInfo();
   const { wishlist } = useSelector((state) => state.wishlist);
   const { user: userInfo } = useSelector((state) => state.auth);
+
+
   return (
     <>
+
       <header>
         <div className={`header__area ${style_2 ? "" : "header__transparent"}`}>
           <div
@@ -49,11 +56,11 @@ const Header = ({ style_2 = false }) => {
                   </div>
                   <div className="col-xxl-5 col-xl-3 col-lg-8 col-md-8 col-sm-7 col-4">
                     <div className="header__bottom-right-13 d-flex justify-content-end align-items-center pl-30">
-                      <div className="header__search-13">
-                        <SearchForm/>
+                      <div className="header__search-13 d-none d-xxl-block">
+                        <SearchForm />
                       </div>
-                      <div className="header__action-13 d-none d-md-block">
-                        <ul>
+                      <div className="header__action-13">
+                        <ul className="d-flex flex-row align-items-center">
                           <li className="d-xxl-none">
                             <a href="#">
                               <Search />
@@ -92,9 +99,7 @@ const Header = ({ style_2 = false }) => {
                           <li>
                             <Link href="/wishlist">
                               <Heart />
-                              <span className="tp-item-count">
-                                {wishlist.length}
-                              </span>
+                              <span className="tp-item-count">{wishlist.length}</span>
                             </Link>
                           </li>
                           <li>
@@ -133,10 +138,7 @@ const Header = ({ style_2 = false }) => {
       {/* cart mini area end */}
 
       {/* off canvas start */}
-      <OffCanvas
-        isOffCanvasOpen={isOffCanvasOpen}
-        setIsOffCanvasOpen={setIsOffCanvasOpen}
-      />
+      <OffCanvas isOffCanvasOpen={isOffCanvasOpen} setIsOffCanvasOpen={setIsOffCanvasOpen} />
       {/* off canvas end */}
     </>
   );
