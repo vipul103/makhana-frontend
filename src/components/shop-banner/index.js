@@ -26,8 +26,8 @@ export default function AboutMakhana() {
             <Image
               src="/assets/img/icon/rot.png"
               alt="Makhana Main"
-              width={320}
-              height={320}
+              fill
+              sizes="(max-width: 768px) 200px, 320px"
               className="circle-image"
             />
           </div>
@@ -65,7 +65,6 @@ export default function AboutMakhana() {
         </div>
       </div>
 
-      {/* ✅ Responsive CSS */}
       <style jsx>{`
         .about-makhana {
           background-color: #fef0bd;
@@ -84,16 +83,16 @@ export default function AboutMakhana() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 2rem;
+          gap: 2.5rem;
           max-width: 1200px;
           width: 100%;
         }
 
         .rotating-circle {
-          width: 280px;
-          height: 280px;
+          width: clamp(180px, 40vw, 420px);
+          height: clamp(180px, 40vw, 420px);
           border-radius: 50%;
-          border: 10px solid #facc15;
+          border: clamp(6px, 1.2vw, 14px) solid #facc15;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -102,32 +101,32 @@ export default function AboutMakhana() {
         }
 
         .inner-circle {
-          width: 260px;
-          height: 260px;
+          width: 90%;
+          height: 90%;
           border-radius: 50%;
-          border: 10px solid #fdba74;
+          border: clamp(6px, 1vw, 14px) solid #fdba74;
           display: flex;
           justify-content: center;
           align-items: center;
+          position: relative;
         }
 
         .circle-image {
+          object-fit: contain;
           border-radius: 9999px;
-          width: 100%;
-          height: auto;
         }
 
         .content-card {
           background: white;
           border-radius: 1rem;
-          padding: 2rem;
+          padding: clamp(1.5rem, 5vw, 2.5rem);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
           width: 100%;
-          max-width: 600px;
+          max-width: 650px;
         }
 
         .content-card h2 {
-          font-size: 2rem;
+          font-size: clamp(1.5rem, 5vw, 2.5rem);
           font-weight: 700;
           margin-bottom: 1.25rem;
         }
@@ -137,7 +136,7 @@ export default function AboutMakhana() {
         }
 
         .content-card p {
-          font-size: 1rem;
+          font-size: clamp(1rem, 3vw, 1.125rem);
           color: #374151;
           margin-bottom: 1.5rem;
         }
@@ -165,44 +164,19 @@ export default function AboutMakhana() {
         }
 
         .content-card li span:last-child {
-          font-size: 1rem;
+          font-size: clamp(1rem, 2.5vw, 1.125rem);
           color: #1f2937;
         }
 
-        /* ✅ Medium & Up: Two columns */
+        /* Medium+ screens (tablet and up) */
         @media (min-width: 768px) {
           .container {
             flex-direction: row;
             justify-content: space-between;
-            gap: 3rem;
           }
 
-          .rotating-circle {
-            width: 420px;
-            height: 420px;
-            border-width: 14px;
-          }
-
-          .inner-circle {
-            width: 400px;
-            height: 400px;
-            border-width: 14px;
-          }
-        }
-
-        /* ✅ Large Screens */
-        @media (min-width: 1024px) {
           .content-card {
-            padding: 2.5rem;
-          }
-
-          .content-card h2 {
-            font-size: 2.5rem;
-          }
-
-          .content-card p,
-          .content-card li span:last-child {
-            font-size: 1.125rem;
+            max-width: 50%;
           }
         }
       `}</style>

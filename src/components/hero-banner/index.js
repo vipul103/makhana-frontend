@@ -142,7 +142,7 @@ const HeroBanner = () => {
     height: "100vh",
     position: "relative",
     overflow: "hidden",
-    marginTop: "110px" // 👈 pushes the container down
+    marginTop: "70px" // 👈 pushes the container down
   }}
 >
 
