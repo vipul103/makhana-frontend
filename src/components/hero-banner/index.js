@@ -136,52 +136,52 @@ const HeroBanner = () => {
       >
         {slider_data.map((item, index) => (
           <SwiperSlide key={item.id}>
-       <div
-  style={{
-    width: "100%",
-    height: "100vh",
-    position: "relative",
-    overflow: "hidden",
-    marginTop: "70px" // 👈 pushes the container down
-  }}
->
+  <div
+    style={{
+      width: "100%",
+      height: isMobile ? "55vh" : "100vh", // 👈 shrink for mobile
+      position: "relative",
+      overflow: "hidden",
+      marginTop: "70px"
+    }}
+  >
+    {/* Background Image */}
+    <Image
+      src={item.img}
+      alt={`Hero Banner ${item.id}`}
+      fill
+      style={{
+        objectFit: "cover",
+        objectPosition: "center",
+      }}
+      priority
+    />
 
+    {/* Mobile text content */}
+    {isMobile && (
+      <div
+        style={{
+          position: "absolute",
+          top: "70%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          color: "white",
+          textAlign: "center",
+          textShadow: "0 2px 4px rgba(0,0,0,0.5)",
+          width: "100%",
+          maxWidth: "90%",
+          fontSize: "clamp(18px, 5vw, 28px)",
+          fontWeight: 700,
+          lineHeight: 1.3,
+          padding: "0 10px"
+        }}
+      >
+        {/* {overlayContent[index]} */}
+      </div>
+    )}
+  </div>
+</SwiperSlide>
 
-
-              {/* Background Image */}
-              <Image
-                src={item.img}
-                alt={`Hero Banner ${item.id}`}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                }}
-                priority
-              />
-
-              {/* Mobile text content */}
-              {isMobile && (
-                <div style={{
-                  position: "absolute",
-                  top: "70%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  color: "white",
-                  textAlign: "center",
-                  textShadow: "0 2px 4px rgba(0,0,0,0.5)",
-                  width: "100%",
-                  maxWidth: "90%",
-                  fontSize: "clamp(20px, 6vw, 32px)",
-                  fontWeight: 700,
-                  lineHeight: 1.3,
-                  padding: "0 10px"
-                }}>
-                  {overlayContent[index]}
-                </div>
-              )}
-            </div>
-          </SwiperSlide>
         ))}
       </Swiper>
     </section>
