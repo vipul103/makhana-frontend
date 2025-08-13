@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 // internal
 import Menus from "./menus";
-import logo from "@assets/img/logo/krave.png";
+import logo from "@assets/img/logo/kravelab.svg";
 import { Cart, Heart, Search, User } from "@svg/index";
 import useSticky from "@hooks/use-sticky";
 import CartSidebar from "@components/common/sidebar/cart-sidebar";
