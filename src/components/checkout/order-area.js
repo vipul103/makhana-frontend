@@ -537,7 +537,7 @@ const OrderArea = ({
     }
 
     try {
-      const { data } = await axios.post("http://localhost:5000/api/order/create-razorpay-order", {
+      const { data } = await axios.post("https://make-back-v1ra.onrender.com/api/order/create-razorpay-order", {
         amount: cartTotal,
       });
 
@@ -556,7 +556,7 @@ const OrderArea = ({
           });
 
           try {
-            await axios.post("http://localhost:5000/api/order/addOrder", orderData);
+            await axios.post("https://make-back-v1ra.onrender.com/api/order/addOrder", orderData);
             toast.success("Order Placed successfully.");
 
 setTimeout(() => {
@@ -569,7 +569,7 @@ setTimeout(() => {
           }
 
           try {
-            await axios.post("http://localhost:5000/api/order/send-mail", {
+            await axios.post("https://make-back-v1ra.onrender.com/api/order/send-mail", {
               orderInfo: orderData,
             });
             toast.success("📧 Email sent successfully.");
@@ -607,7 +607,7 @@ setTimeout(() => {
     });
 
     try {
-      await axios.post("http://localhost:5000/api/order/addOrder", orderData);
+      await axios.post("https://make-back-v1ra.onrender.com/api/order/addOrder", orderData);
       toast.success("COD Order Placed successfully.");
       setTimeout(() => {
         router.push("/order-confirmation");
@@ -619,7 +619,7 @@ setTimeout(() => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/order/send-mail", {
+      await axios.post("https://make-back-v1ra.onrender.com/api/order/send-mail", {
         orderInfo: orderData,
       });
       toast.success("📧 Email sent successfully.");
