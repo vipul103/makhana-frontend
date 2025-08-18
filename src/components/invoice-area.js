@@ -36,7 +36,7 @@ console.log("Cart:", info.cart);
               <div className="row align-items-end">
                 <div className="col-md-4 col-sm-6">
                   <div className="invoice__left">
-                    <Image className="mb-15" priority src="/assets/img/logo/mainlogo.png" alt="logo" width={200} height={100} />
+                    <Image className="mb-15" priority src="/assets/img/logo/kravelab.svg" alt="logo" width={200} height={100} />
                     <p>
                       Malviya nager <br /> jaipur, rajasthan
                     </p>
