@@ -32,9 +32,8 @@ const Header = ({ style_2 = false }) => {
       <header>
         <div className={`header__area ${style_2 ? "" : "header__transparent"}`}>
           <div
-            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${
-              style_2 ? "header__bottom-13-white" : "grey-bg-17"
-            } header__sticky ${sticky ? "header-sticky" : ""}`}
+            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${style_2 ? "header__bottom-13-white" : "grey-bg-17"
+              } header__sticky ${sticky ? "header-sticky" : ""}`}
             id="header-sticky"
           >
             <div className="container-fluid">
@@ -61,11 +60,7 @@ const Header = ({ style_2 = false }) => {
                       </div>
                       <div className="header__action-13">
                         <ul className="d-flex flex-row align-items-center">
-                          <li className="d-xxl-none">
-                            <a href="#">
-                              <Search />
-                            </a>
-                          </li>
+                          {/* Removed the mobile search icon li */}
                           {userInfo?.imageURL ? (
                             <li>
                               <Link href="/user-dashboard">
@@ -113,6 +108,7 @@ const Header = ({ style_2 = false }) => {
                           </li>
                         </ul>
                       </div>
+
                       <div className="header__hamburger ml-30 d-xl-none">
                         <button
                           onClick={() => setIsOffCanvasOpen(true)}
